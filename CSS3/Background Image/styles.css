@@ -1,0 +1,20 @@
+div{
+    color: red;
+    background: url("https://tse1.mm.bing.net/th?id=OIP.HxFfBmqvKsktRmVJcbguBwHaE8&pid=Api&rs=1&c=1&qlt=95&w=146&h=97");
+    min-height: 100vh;
+}
+
+div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*  background-position property will only work if there is no   background-size property based on background size there properties will work*/
+/* background-attachment will be used to adjust the background image */

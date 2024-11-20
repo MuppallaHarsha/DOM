@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Css Grid</title>
+  </head>
+  <style>
+    /* Part1: basic syntax */
+    .container {
+      display: grid;
+      grid-template-columns: 200px 300px 250px;
+      /* this property is important and here 200px for first child and 300px for second child and this property is used for converting child's into columns*/
+    }
+
+    /* Part2: units */
+    .container {
+      display: grid;
+      grid-template-columns: 200px 7rem auto;
+      /* we use auto and fr for responsiveness
+      auto will take entire width */
+    }
+
+    /*Part3: rows */
+    .container {
+      display: grid;
+      grid-template-columns: 200px auto 10rem;
+      grid-template-rows: 200px 500px;
+      /*auto will only take entire width for rows if there is height property  */
+    }
+
+    /*Part4: fr(fraction of available space) 1fr = 100% this percentage will be divided by half based on number of fr's*/
+    .container {
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    /* Grid Gap property: by using grid-gap property we can apply the gaps between rows and columns this is the old syntax  */
+
+    .container {
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-row-gap: 40px;
+      grid-column-gap: 40px;
+    }
+
+    /* Grid Gap property: by using gap property we can apply the gaps between rows and columns at a time this is the new syntax  */
+
+    .container {
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      row-gap: 50px;
+      column-gap: 50px;
+    }
+
+    /* difference between fr,px and %  here px and % does not calculate the availability space so these gives scrolling so we use fr for the grid*/
+
+    .container {
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 40px 100px;
+    }
+
+    /* developer tools */
+    .container {
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px;
+      gap: 50px;
+    }
+
+    /*grid lines: by using these we can modify the cells occupation so we use grid-column and grid-row as short cut  and 1/3 represent start/end cell1 class is for positive values for grid columns and rows values where as cell4 is for negative values */
+
+    /* .container {
+      margin: 5rem;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px;
+      gap: 1rem;
+    }
+
+    .cell1 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+
+    .cell2 {
+      grid-column: 1/3;
+    }
+
+    .cell4 {
+      grid-column: 1/-1;
+    } */
+
+    /* Naming grid lines: we can name grid positions start end and middle by naming inside open braces */
+    .container {
+      margin: 5rem;
+      height: 100vh;
+      display: grid;
+      grid-template-columns:
+        [start] 100px
+        [middle1] 100px [middle2] 100px [end];
+      grid-template-rows:
+        [start] 100px
+        [middle1] 100px [middle2] 100px [end];
+      gap: 1rem;
+    }
+
+    /* .cell1 {
+      grid-column: start/3;
+      grid-row: start/middle2;
+    } */
+
+    /* Grid Template area */
+  </style>
+  <body>
+    <div class="container">
+      <div class="cell cell1">Cell 1</div>
+      <div class="cell cell2">Cell 2</div>
+      <div class="cell cell3">Cell 3</div>
+      <div class="cell cell4">Cell 4</div>
+      <div class="cell cell5">Cell 5</div>
+      <div class="cell">Cell 6</div>
+      <div class="cell">Cell 7</div>
+      <div class="cell">Cell 8</div>
+    </div>
+  </body>
+</html>

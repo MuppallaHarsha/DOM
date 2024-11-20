@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Css Grid Template areas</title>
+  </head>
+  <style>
+    /* Grid template areas: we use grid template areas to name the area of rows and columns to name each row and column we should mention the rows separately  and column along with each row in below grid template areas first position represents first row with three columns named "a a a" and second row with column names "a a b" and so on. To modify the grid template areas of each cell we must use grid area to that cell which we want to modify */
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 100px 100px 100px 100px 100px 100px;
+      grid-template-areas:
+        "a a b"
+        "a a b" "c c b" "d d d" "e e f" "e e f";
+    }
+
+    .cell1 {
+      grid-area: a;
+    }
+    .cell2 {
+      grid-area: b;
+    }
+    .cell3 {
+      grid-area: c;
+    }
+    .cell4 {
+      grid-area: d;
+    }
+    .cell5 {
+      grid-area: e;
+    }
+    .cell6 {
+      grid-area: f;
+    }
+
+    /* Order Property */
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 100px 100px;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="cell cell1">Cell 1</div>
+      <div class="cell cell2">Cell 2</div>
+      <div class="cell cell3">Cell 3</div>
+      <div class="cell cell4">Cell 4</div>
+      <div class="cell cell5">Cell 5</div>
+      <div class="cell cell6">Cell 6</div>
+    </div>
+  </body>
+</html>

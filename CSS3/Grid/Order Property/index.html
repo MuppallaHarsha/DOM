@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Css Grid Repeat</title>
+  </head>
+  <style>
+    /* Order Property: By default Order is 0 and higher order values are places at last place and lower order values are placed at first.  */
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 100px 100px;
+    }
+    /* .cell1 {
+      order: 2;
+    }
+    .cell6 {
+      order: -1;
+    } */
+
+    /* Repeat: first argument is how many times does a column or row repeats and second argument is units that it takes.*/
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    /* Align content work only if there is height. By default align content is stretch */
+    .container {
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 100px 100px 200px;
+      align-content: space-between;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="cell cell1">Cell 1</div>
+      <div class="cell cell2">Cell 2</div>
+      <div class="cell cell3">Cell 3</div>
+      <div class="cell cell4">Cell 4</div>
+      <div class="cell cell5">Cell 5</div>
+      <div class="cell cell6">Cell 6</div>
+    </div>
+  </body>
+</html>

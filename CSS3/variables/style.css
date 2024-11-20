@@ -1,0 +1,53 @@
+/*  css variables also known as custom properties
+syntax: 
+--variableName: value
+property: var(--variableName)
+scope:
+:root{} = global access
+element = local access */
+
+.heading {
+  color: rgba(18, 139, 245, 0.803);
+}
+
+.text {
+  color: violet;
+}
+
+.main-text {
+  color: #f08c08;
+}
+
+.second-heading {
+  color: rgba(18, 139, 245, 0.803);
+}
+
+.third-heading {
+  color: rgba(18, 139, 245, 0.803);
+}
+
+/* global scope variable */
+
+:root {
+  --color: #ec0f60d5;
+  --secondaryColor: aqua;
+  --mainTransition: all 1s linear;
+}
+
+.heading {
+  color: var(--color);
+}
+
+.heading:hover {
+  color: var(--secondaryColor);
+  transition: var(--mainTransition);
+}
+
+/* local scope */
+div {
+  --color: #e6a2b3;
+}
+
+.main-text {
+  color: var(--color);
+}

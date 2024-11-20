@@ -1,0 +1,71 @@
+/* Pixels does not depend on parent and it is fixed */
+
+h1 {
+  font-size: 25px;
+  width: 300px;
+  height: 110px;
+  background-color: greenyellow;
+}
+
+/* Percentage does depend on Parent element */
+.outer {
+  width: 300px;
+  height: 300px;
+  background-color: tomato;
+}
+
+.inner {
+  width: 50%;
+  height: 50%;
+  background-color: aquamarine;
+}
+
+/* em- relative which means it depends on parent
+1em = 16px default browser style or parent style
+1em = base value
+here div is the parent element so 1em = the font size of its parent which is a div */
+
+div {
+  font-size: 22px;
+}
+
+.relative {
+  font-size: 2em;
+  /* 2em = 2*22px */
+}
+
+.absolute {
+  font-size: 32px;
+}
+
+/* rem = relative which means It depends on root element which is html element.
+1rem = 16px :default browser style*/
+
+html {
+  font-size: 18px;
+}
+
+.relative {
+  font-size: 2rem;
+  /* 2em = 2*22px */
+}
+
+.absolute {
+  font-size: 32px;
+}
+
+/* vh - view height - percentage of the screen
+    vw - view width - percentage of the screen 
+    both these vw and vh depends on screen size*/
+
+.banner {
+  width: 50vw;
+  height: 50vh;
+  background: orangered;
+}
+
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-color: chartreuse;
+}

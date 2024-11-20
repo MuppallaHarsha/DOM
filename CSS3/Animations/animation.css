@@ -1,0 +1,45 @@
+/* shorthand for animations is animation: name duration timing-function delay iteration-count direction fill-mode;*/
+
+div{
+    width: 200px;
+    height: 100px;
+    color: white;
+    margin: 15px 0;
+}
+
+.transition{
+    background: blue;
+    transition: all 1s linear;
+}
+
+.transition:hover{
+    transform: translateX(200px);
+    background: orangered;
+}
+
+.animation{
+    background: red;
+    /* animation short cutis animation: animation-name, animation-duration, animation-iteration-count */
+    animation-name: animation;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+    
+}
+
+@keyframes animation {
+    0%{
+        transform: translateX(20px);
+    }
+    50%{
+        transform: translateX(200px);
+        background: antiquewhite;
+    }
+    75%{
+        transform: translateX(-150px);
+        background: palevioletred;
+    }
+    100%{
+        transform: translateX(20px);
+        background: lightskyblue;
+    }
+}

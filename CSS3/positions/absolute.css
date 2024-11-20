@@ -1,0 +1,36 @@
+.main{
+    width: 50vh;
+    height: 50vh;
+    border: 6px solid goldenrod;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.one{
+    width: 100px;
+    height: 100px;
+    background: blue;
+    position: absolute;
+    bottom: 0px;
+}
+
+.two{
+    width: 100px;
+    height: 100px;
+    background: green;
+}
+
+/* once we have given position is fixed that element disappears until we provide the position values like top,bottom etc*/
+button{
+    padding: 7px 20px;
+    background: orangered;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize ;
+    font-size: 25px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}

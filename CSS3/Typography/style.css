@@ -1,0 +1,43 @@
+/* font-family */
+body {
+  font-size: 1.5rem;
+  font-family: "Dai Banna SIL", serif;
+}
+
+h1 {
+  font-family: "Borel", cursive;
+}
+
+/* font-weight: It is used to show the text is bold or light, 
+font-style: It is used to styling the font , 
+text-align: It is used for the positioning of the text , 
+text-indent: It is used for the spacing of the first line of the text
+line-height: It is used to adjust the height between the lines and it is dependent on the parent element,
+letter-spacing: It is used to adjust the spacing between the letters,
+word-spacing: It is used to adjust the spacing between the words,
+text-transform: It is used to transform the text,
+text-decoration: It is used to decorate the text */
+
+.one {
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.two {
+  font-style: initial;
+  word-spacing: 81px;
+}
+
+.three {
+  text-indent: 100px;
+  line-height: 4em;
+}
+
+.subheading {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,90 @@
+/* for pseudo elements content is mandatory.In css by using pseudo elements we can add html content. The content we provided using pseudo elements are inline elements by default  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p::first-letter{
+    text-transform: capitalize;
+    color: blue;
+}
+
+p::first-line{
+    color: green;
+    font-weight: bold;
+}
+
+p::before{
+    content: "Starting ";
+    font-weight: bold;
+    color: red;
+    font-size: 2rem;
+    display: block;
+    background: lightgrey;
+}
+
+p::after{
+    content: " Ending";
+    font-weight: bold;
+    color: red;
+    font-size: 2rem;
+    display: block;
+    background: lightgrey;
+}
+
+div{
+    width: 60vw;
+    margin: 100px 40em;
+    position: relative;
+}
+
+img{
+width: 25vw;
+height: 50vh;
+border: 3px solid red;
+display: block;
+}
+
+
+
+div::before{
+    content: "";
+    border: 5px solid springgreen;
+    background: url("./../../../images/ntr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25vw;
+    height: 50vh;
+    position: absolute;
+    box-sizing: border-box;
+    top: -60px;
+    left: -30em;
+    z-index: -2;
+    transition: all 0.5s linear;
+
+}
+
+div::after{
+    content: "";
+    border: 5px solid tomato;
+    background: url("./../../../images/prabhas.webp");
+    background-size: cover;
+    width: 25vw;
+    height: 50vh;
+    position: absolute;
+    box-sizing: border-box;
+    top: -30px;
+    left: -15em;
+    z-index: -1;
+    transition: all 0.5s linear;
+}
+
+div:hover::before, div:hover::after{
+    top: 0;
+    left: 0;
+}
+
+/*::first-line : This pseudo element is used to add styling for the first line of the content
+::first-letter : This pseudo element is used to add styling for the first letter of the content */

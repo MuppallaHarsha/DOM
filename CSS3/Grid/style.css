@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    color: #222;
+}
+
+.container{
+    border: 5px solid tomato;
+}
+
+.cell{
+    padding: 2rem;
+    background: #f5e6e6;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border: 3px solid gray;
+    color: white;
+}
+
+.cell1{
+background: #581f58;
+}
+.cell2{
+background: #f81a58;
+}
+.cell3{
+background: #b81ff8;
+}
+.cell4{
+background: #cd1ab8;
+}
+.cell5{
+background: #74a880;
+}
+.cell6{
+    background:blue ;
+}

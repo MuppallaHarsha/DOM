@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Css Grid MinMax</title>
+  </head>
+  <style>
+    /* auto-fill keeps creating auto-fit only fits to overcome the wastage of space we use auto-fit and auto-fill. auto fit will fit the content to the available space and auto fill will continue creating until there is space  */
+    /* repeat(the number of column/rows, the width we want) */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    .container1 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+  </style>
+  <body>
+    <h1>Auto Fill</h1>
+    <div class="container">
+      <div class="cell cell1">Cell 1</div>
+      <div class="cell cell2">Cell 2</div>
+      <div class="cell cell3">Cell 3</div>
+      <div class="cell cell4">Cell 4</div>
+      <div class="cell cell5">Cell 5</div>
+      <div class="cell cell6">Cell 6</div>
+    </div>
+    <h1>Auto Fit</h1>
+    <div class="container1">
+      <div class="cell cell1">Cell 1</div>
+      <div class="cell cell2">Cell 2</div>
+      <div class="cell cell3">Cell 3</div>
+      <div class="cell cell4">Cell 4</div>
+      <div class="cell cell5">Cell 5</div>
+      <div class="cell cell6">Cell 6</div>
+    </div>
+  </body>
+</html>

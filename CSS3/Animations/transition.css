@@ -1,0 +1,75 @@
+/*  Transition-property: This is the css property to which the transition is applied
+Transition-duration: This is the duration for the transition property 
+Transition-duration works only if Transition-property exists. These should be used together.
+*/
+
+/* short hand for the transition property is Transition : Transition-property Transition-duration Transition-delay  */
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+div:hover {
+  background: aqua;
+}
+
+.one {
+  background: orangered;
+}
+
+.two {
+  background: blue;
+  transition: border-radius 3s 0.2s;
+}
+
+.three {
+  background: red;
+  transition-property: background;
+  transition-duration: 3s;
+}
+
+.three:hover {
+  background: yellow;
+}
+
+.two:hover {
+  border-radius: 50%;
+}
+
+p {
+  width: 100px;
+  height: 100px;
+  margin: 15px;
+  color: blue;
+  background: orchid;
+  text-align: center;
+  border-radius: 7px;
+  transition: all 1s;
+}
+
+p:hover {
+  transform: translateX(127px);
+}
+
+.ease {
+  /* transition: all 1s ease; */
+  transition-timing-function: ease;
+}
+
+.linear {
+  transition-timing-function: linear;
+}
+
+.ease-in {
+  transition-timing-function: ease-in;
+}
+
+.ease-out {
+  transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}

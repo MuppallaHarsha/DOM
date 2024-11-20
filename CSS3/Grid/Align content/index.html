@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Css align-content</title>
+  </head>
+  <style>
+    /* Align content work only if there is height. By default align content is stretch */
+    .container {
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 100px 100px 200px;
+      align-content: space-evenly;
+    }
+
+    /* align-items: align items is used to change the content of a cell vertically,justify-items: justify items is used to change the content of a cell horizontally. These two used for all the children.
+     align-self&justify-self: Both these are same as the above but the difference is we use align-self and justify-self for individual children only unlike align-items and justify-items */
+    .container {
+      height: 100vh;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      align-items: center;
+      justify-items: center;
+    }
+
+    .cell1 {
+      align-self: flex-start;
+      justify-self: flex-start;
+    }
+    .cell6 {
+      align-self: flex-end;
+      justify-self: flex-end;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="cell cell1">Cell 1</div>
+      <div class="cell cell2">Cell 2</div>
+      <div class="cell cell3">Cell 3</div>
+      <div class="cell cell4">Cell 4</div>
+      <div class="cell cell5">Cell 5</div>
+      <div class="cell cell6">Cell 6</div>
+    </div>
+  </body>
+</html>

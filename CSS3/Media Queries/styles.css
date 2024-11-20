@@ -1,0 +1,55 @@
+/* We use media queries for responsive design */
+
+body{
+    background: #ff6347;
+}
+
+.banner{
+    background: #fcfcfc;
+}
+
+h1{
+    text-decoration: underline;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+/* media queries */
+@media screen and (max-width:512px){
+    body{
+        background: #ecf347;
+    }
+    
+    .banner{
+        background: #a8ef8e;
+    }
+    
+    h1{
+        text-decoration: none;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width:716px){
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    body{
+        background: #ecf347;
+    }
+    
+    .banner{
+        background: #a8ef8e;
+    }
+    
+    h1{
+        text-decoration: none;
+        text-align: center;
+        padding: 10px;
+    }
+}

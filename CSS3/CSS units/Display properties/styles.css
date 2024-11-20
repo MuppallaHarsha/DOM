@@ -1,0 +1,26 @@
+/* Default Display property 
+Block: always starts with  a new line and takes full width
+inline: doesn't start with a new line width takes up to content space*/
+
+*{
+    margin: 0;
+   padding: 0; 
+   box-sizing: border-box;
+}
+
+/* margin auto will only work if there is width */
+
+.block{
+    background-color: green; 
+    width: 300px;
+    margin: 25px auto; 
+}
+
+.inline{
+    background-color: greenyellow; 
+}
+
+body{
+    text-align: center;
+}
+

@@ -1,0 +1,20 @@
+/* calc() : this method performs math operators +,-,*,/ */
+
+.navbar{
+    color: white;
+    font-size: 3rem;
+    background: blue;
+    height: 100px;
+}
+
+.banner{
+    background-color: blueviolet;
+    min-height: calc(100vh - 100px);
+}
+
+h1{
+    background-color: green;
+    color: black;
+    min-height: 200px;
+}
+

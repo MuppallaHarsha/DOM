@@ -1,0 +1,57 @@
+/* descendent selectors */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  background-color: crimson;
+  color: bisque;
+  display: block;
+  padding: 10px 10px;
+  margin: 0 0 7px 0;
+}
+
+/* for inline elements the top and bottom properties for margin and padding doesn't change in order to modify that we should convert inline elements into block elements by using display as block (or) we can use inline-block value of display property in order to modify padding and margin without using block value of display property*/
+
+/* box-sizing is used to avoid the overlapping issue because when ever we do padding the size of the box will increase by using box-sizing property the content will adjust according to the value of padding */
+
+/* box-sizing */
+
+.box {
+  width: 200px;
+  height: 200px;
+  color: rgb(191, 235, 235);
+}
+
+.box-1 {
+  background: orangered;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.box-2 {
+  background: black;
+  margin-bottom: 100px;
+}
+
+.box-3 {
+  background: tomato;
+}
+
+.box-4 {
+  background: teal;
+  padding: 35px;
+}

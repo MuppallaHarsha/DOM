@@ -1,0 +1,42 @@
+/* transform: translate(), scale(), skew(), rotate() */
+/* translateX(): This transform method will adjust position towards x-axis,
+translateY(): This transform method will adjust position towards y-axis 
+translate(x,y): This transform method will adjust position towards both x-axis and y-axis 
+*/
+/* scaleX(): This transform method will adjust the size of towards x-axis,
+scaleY(): This transform method will adjust the size of towards y-axis,
+scale(): This transform method will adjust the size of towards both x-axis and y-axis
+ */
+ /* skewX(): This transform method will adjust the shape of towards x-axis,
+skewY(): This transform method will adjust the shape of towards y-axis,
+skew(x,y): This transform method will adjust the shape of towards both x-axis and y-axis
+ */
+
+div{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+.one{
+    background: orangered;
+    /* transform: translateX(10px);
+    transform: scaleX(0.5); */
+    transform: skewX(60deg);
+
+}
+
+.two{
+    background: blue;
+    /* transform: translate(30px,30px);
+    transform: scale(0.6); */
+    transform: skewY(60deg);
+
+}
+
+.three{
+    background: green;
+    /* transform: translateY(30px);
+    transform: scaleY(0.5); */
+    transform: skew(60deg, 60deg);
+}

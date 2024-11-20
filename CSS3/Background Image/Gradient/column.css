@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    float: left;
+    width: 33.33%;
+    height: 200px;
+    color:white;
+}
+
+.one{
+    background: orangered
+}
+
+.two{
+    background: white;
+    color: black;
+}
+
+.three{
+    background: green;
+}

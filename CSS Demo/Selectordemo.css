@@ -1,0 +1,31 @@
+/* p::first-line {
+  color: mediumpurple;
+}
+
+p::first-letter {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: darkorange;
+} */
+
+/* body {
+  width: 33.33%;
+}
+
+div > p {
+  color: orangered;
+} */
+
+.main {
+  display: inline-block;
+}
+
+.section-1 {
+  background-color: red;
+}
+.section-2 {
+  background-color: blue;
+}
+.section-3 {
+  background-color: green;
+}

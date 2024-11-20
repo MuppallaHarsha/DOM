@@ -1,0 +1,18 @@
+h1{
+    font-size: 3rem;
+}
+
+.absolute{
+    font-size: 24px;
+}
+
+.responsive{
+    font-size: 1.5em;
+}
+
+:root{
+    background: beige;
+    /* This means the default size is 16px by applying 62.5% means font size is 62.5% of 16px which is default */
+    font-size: 62.5%;
+
+}

@@ -1,0 +1,68 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #f3f3f3;
+}
+
+.container {
+  border: 5px solid red;
+}
+
+.box {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #f3f3f3;
+}
+
+.box-1 {
+  background: #940534;
+}
+.box-2 {
+  background: #f48aad;
+}
+.box-3 {
+  background: #f80254b5;
+}
+.box-4 {
+  background: #f8d3e0;
+}
+.box-5 {
+  background: #3c021591;
+}
+
+.generic {
+  background: #f02d4a91;
+}
+
+/* parent properties */
+
+/* flex-direction syntax: row row-reverse column column-reverse applicable only for parent element by default flex direction is row */
+
+/* flex-wrap syntax: no-wrap wrap wrap-reverse no-wrap is default*/
+
+/* justify content: flex property is compulsory to apply justify content. It is used to centre the children elements horizontally by default flex-start(adjust content to left which is by default), flex-end(adjust content to right side), center(adjust content to center)
+*/
+
+/* align-items: it is used to align the items(content) vertically by default height is inline property so we change it to block by adjusting height value. default value of align items is stretch. flex-start value align the content at top which is starting position, flex-end value align the content at bottom which is end */
+
+/* align-content: stretch by default. It is same as justify content but it adjust content vertically(to adjust rows)*/
+
+/* main-axis and cross-axis: It depends on flex-direction. If we take flex-box row main axis will be from left to right and cross-axis will be from top to bottom. 
+If we take flex-box column main axis will be from top to bottom and cross-axis will be from left to right.
+If flex direction is row then justify content justify-content is horizontal center and align-items for vertical center for column it is vice versa*/
+
+/* children properties */
+
+/* order and property: this is for children not for parent by default it is zero for all children. By using this we can we can change the html elements position */
+
+/* align-self: It is a children property works same as align-items by using this align self we can over-ride the align-items */
+
+/* flex-grow: It will adjust the content width to the flex box. we can adjust individual content width by applying this property.*/
+
+/* flex-shrink: default value is 1. This will help to not adjust the element width according to the screen size*/
+
+/* flex-basis: It will take base value. If we use this the content will not reduce then the value we provided */
+
+/* short hand syntax of flex is flex: flex-grow flex-shrink flex-basis  */
+
+/* flex-box is a one-dimensional layout and grid is two-dimensional layer */

@@ -1,0 +1,28 @@
+CSS FlexBox
+ 1.flex-wrap: It is used to control the overflow of the children to the parent.
+ 2.justify-content: It is used to align the  horizontally(X-axis). It is used on container
+ 3.align-items: It is used to align the  vertically(Y-axis). It is used to align content
+ 4.align-content:It defines the starting point for how much space a flex item will occupy in the main axis.The align-content property only affects flex containers with multiple lines, which requires the use of flex-wrap. The align-content property controls the spacing between flex lines (rows or columns, depending on the flex direction) within the container, but it doesn’t affect single-line flex containers. It only works if flex-wrap is wrap. It is used to adjust children
+ 5.Order: It places the content by their specificity 0(which has low specificity) so it placed first 1(which has high specificity compared to 0) so it placed last.
+ 6.flex-grow: It increases the width based on high specificity where 0 has the low specificity 
+ 7.flex-shrink:by default it has 1 so it will shrink the property value by  changing it to 0 it will not shrink
+ 8.flex-basis: Set the initial size of the flex items along with the main axis.
+ 9.when the flex direction is a column, justify-content changes to the vertical and align-items to the horizontal.
+ 10. flex-direction + flex-wrap = flex-flow : direction wrap;
+ 11. align-content vs align-items: align-content determines the spacing between lines, while align-items determines how the items as a whole are aligned within the container. When there is only one line, align-content has no effect.
+
+CSS Grid
+ 1.grid-template-columns: defines the columns of a grid container by setting the track sizes. You can specify sizes, auto placement, and the number of columns to achieve different layouts. Track sizes: It can be a length (like px, em, %), a flexible fraction (fr), or a combination of keywords (auto, min-content, max-content).
+ A grid track is the space between two adjacent grid lines
+ 2.grid-template-rows:It is used to define the height of each row in a grid container. This property allows you to specify multiple row heights, creating a structured and adaptable grid layout. If we do not mention it explicitly then by using implicit grid the rows will be taken based on colums we have given.
+ 3.Fr(fraction)Unit: It is a flexible unit used in CSS Grid Layout to allocate space in a grid container based on the available free space.It allows you to define columns or rows in terms of portions or fractions of the remaining space in the grid container.
+ 4.repeat(no.of rows/no.of columns, units for size): It used in grid-template-rows/columns.
+ 5.justify-items: It is used to align the content horizontally.
+ 6.align-self: It is used only for chidren.
+ 7.minmax(minvalue,maxvalue)
+ 8.auto-fill: It will attempts to create as many columns or rows as possible, fitting the container, based on the size of the grid items and the container's size.
+ It will fill the grid with as many items as it can. If the items don't fill up the entire row, the remaining space will still be distributed across any empty cells.
+ This can lead to empty columns or rows if the total number of items doesn’t perfectly fill the container.
+ 9.auto-fill:It behaves similarly to auto-fill, but with a key difference: it collapses empty columns or rows that aren't needed, making the layout more efficient.
+ If the items don't fill up the entire row, auto-fit will collapse empty columns and distribute the space evenly among the existing items.
+ 10.Grid-area: grid-row-start/grid-column-start/grid-row-end/grid-colmn-end

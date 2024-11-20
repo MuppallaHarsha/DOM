@@ -1,0 +1,48 @@
+body {
+  color: rgb(25, 55, 52);
+}
+h3 {
+  color: rgb(0, 128, 128);
+}
+.crimson {
+  color: blue;
+}
+h3.crimson {
+  color: crimson;
+  text-decoration: underline;
+  padding: 20px;
+  margin: 10px;
+  border: solid rgba(233, 17, 118, 0.804);
+  /* border-top: aqua;
+  border-bottom: teal;
+  border-right: seagreen;
+  border-left: blueviolet; */
+  box-sizing: border-box;
+  text-align: center;
+  background: aquamarine;
+  border-radius: 10px;
+  outline: 3px rgb(208, 247, 13) solid;
+  outline-offset: -15px;
+}
+/* Attribute selector */
+[type="text"] {
+  color: deeppink;
+  background: black;
+  height: 10px;
+  width: 80px;
+  border: 3px solid aqua;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  position: absolute;
+  right: 10px;
+}
+
+.div {
+  position: relative;
+}
+
+label::before {
+  content: "Name";
+  color: crimson;
+}

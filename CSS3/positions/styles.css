@@ -1,0 +1,30 @@
+/* default position is static position */
+
+
+div{
+    border: 5px solid red;
+    background: aquamarine;
+}
+
+/* if the position is relative we can move the element position like top,right,left,bottom whose position is relative and it doesn't modify any changes to that element*/
+.one{
+    background: tomato;
+    color: whitesmoke;
+    /* top: 500px; */
+}
+
+/* absolute position will vary by depending on the parent element the tag which has position as absolute will accept the element as parent which has a position relative by default body has the default position. */
+/* present two class is the parent which act as a container to the special class because position of two class is relative and special class is the child because of its position is absolute */
+.two{
+    background: aliceblue;
+    color: black;
+    position: relative;
+}
+
+.special{
+    background: lightsalmon;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
